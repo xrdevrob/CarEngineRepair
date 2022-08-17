@@ -945,9 +945,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handAnimator: {fileID: 5686134208192617028}
-  triggerActionReference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f,
+  triggerActionRef: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
-  gripActionReference: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f,
+  gripActionRef: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
 --- !u!1 &5686134208185362932
 GameObject:
