@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Script
+namespace XR
 {
     public class HandController : MonoBehaviour
     {
