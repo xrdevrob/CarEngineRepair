@@ -40,7 +40,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Grab
     m_Mirror: 0
-  m_BlendParameter: Grab
+  m_BlendParameter: Grip
   m_BlendParameterY: Trigger
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -78,7 +78,7 @@ AnimatorController:
   m_Name: Right Hand Animator
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Grab
+  - m_Name: Grip
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
