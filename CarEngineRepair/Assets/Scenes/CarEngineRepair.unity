@@ -1788,7 +1788,7 @@ GameObject:
   - component: {fileID: 277649987}
   - component: {fileID: 277649989}
   - component: {fileID: 277649988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftHand Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3410,7 +3410,7 @@ GameObject:
   - component: {fileID: 443842018}
   - component: {fileID: 443842020}
   - component: {fileID: 443842019}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightHand Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11708,7 +11708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1589239019}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
