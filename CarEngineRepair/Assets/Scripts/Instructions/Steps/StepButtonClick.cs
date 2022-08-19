@@ -9,7 +9,7 @@ namespace Instructions.Steps
         [SerializeField] private Button button;
         [SerializeField] private WorkflowController workflowController;
 
-        private void Awake()
+        private void OnEnable()
         {
             button.onClick.AddListener(Complete);
         }
@@ -17,6 +17,11 @@ namespace Instructions.Steps
         private void Complete()
         {
             workflowController.NextStep();
+        }
+
+        private void OnDisable()
+        {
+            button.onClick.RemoveListener(Complete);
         }
     }
 }

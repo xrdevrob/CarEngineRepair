@@ -10,7 +10,7 @@ namespace Instructions.Steps
         [SerializeField] private int interactableValidationLayer;
         [SerializeField] private StepSocketMaster stepSocketMaster;
 
-        private void Awake()
+        private void OnEnable()
         {
             xrSocketInteractor.selectEntered.AddListener(OnSocketSelectEnter);
         }
@@ -20,6 +20,11 @@ namespace Instructions.Steps
             if (eventArgs.interactable.gameObject.layer != interactableValidationLayer) return;
             
             stepSocketMaster.Complete();
+        }
+
+        private void OnDisable()
+        {
+            xrSocketInteractor.selectEntered.RemoveListener(OnSocketSelectEnter);
         }
     }
 }
