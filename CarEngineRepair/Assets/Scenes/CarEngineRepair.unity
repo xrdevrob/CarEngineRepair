@@ -5458,6 +5458,20 @@ MonoBehaviour:
   - {fileID: 1651144307}
   - {fileID: 1175550937}
   - {fileID: 1112590528}
+  - {fileID: 295216256}
+  - {fileID: 1873875146}
+  - {fileID: 1262416236}
+  - {fileID: 514466610}
+  - {fileID: 1397434995}
+  - {fileID: 355237017}
+  - {fileID: 44721583}
+  - {fileID: 21407187}
+  - {fileID: 661357903}
+  - {fileID: 511570663}
+  - {fileID: 1590188674}
+  - {fileID: 572582029}
+  - {fileID: 217496380}
+  - {fileID: 1354893034}
   currentStep: 0
   maxSteps: 0
 --- !u!1 &788653059
@@ -8678,7 +8692,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4ce331d5cbf0c4b40bc05ae83656d481, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -9334,7 +9348,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277809397}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.189, y: 0.901, z: 0.163}
+  m_LocalPosition: {x: -0.2064, y: 0.901, z: 0.1719}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11931,8 +11945,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555790628}
   m_LocalRotation: {x: -3.3881302e-21, y: 1.6671633e-14, z: 0.37541088, w: 0.9268585}
-  m_LocalPosition: {x: -0.8231, y: -0.3341, z: 0.214}
-  m_LocalScale: {x: 0.017572153, y: 0.010842381, z: 0.022697}
+  m_LocalPosition: {x: -0.8167, y: -0.3257, z: 0.214}
+  m_LocalScale: {x: 0.03268245, y: 0.010842381, z: 0.02573159}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1338832884957772572}
@@ -13390,7 +13404,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704867226}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d203548f23f44734d991a1c25b7dc70d, type: 3}
@@ -17170,7 +17184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1338832884957669196
 GameObject:
   m_ObjectHideFlags: 0
