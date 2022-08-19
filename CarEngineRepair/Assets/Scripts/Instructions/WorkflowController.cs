@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Instructions
@@ -7,6 +8,11 @@ namespace Instructions
         [SerializeField] private GameObject[] steps;
         [SerializeField] private int currentStep = 0;
         [SerializeField] private int maxSteps;
+
+        private void Awake()
+        {
+            steps[0].SetActive(true);
+        }
 
         private void OnEnable()
         {
@@ -23,7 +29,7 @@ namespace Instructions
 
         public void RestartInstructions()
         {
-            steps[maxSteps].SetActive(false);
+            steps[maxSteps-1].SetActive(false);
             steps[0].SetActive(true);
         }
     }
