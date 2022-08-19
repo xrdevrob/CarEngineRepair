@@ -825,6 +825,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &48356464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 48356465}
+  m_Layer: 13
+  m_Name: AttachTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &48356465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48356464}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1315705494}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &64509784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,6 +1661,7 @@ GameObject:
   - component: {fileID: 239550014}
   - component: {fileID: 239550016}
   - component: {fileID: 239550015}
+  - component: {fileID: 239550017}
   m_Layer: 13
   m_Name: Hole
   m_TagString: Untagged
@@ -1648,7 +1680,8 @@ Transform:
   m_LocalPosition: {x: 0.0219, y: 0.12, z: 0.18920135}
   m_LocalScale: {x: 0.040000003, y: 1, z: 0.04}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 249127597}
   m_Father: {fileID: 1740864250}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17}
@@ -1702,6 +1735,57 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239550013}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &239550017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239550013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1589239019}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1024
+  m_AttachTransform: {fileID: 249127597}
+  m_KeepSelectedTargetValid: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 0}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
 --- !u!1 &243363954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,7 +1940,7 @@ GameObject:
   - component: {fileID: 245944005}
   - component: {fileID: 245944004}
   m_Layer: 10
-  m_Name: Screw_Cross (1)
+  m_Name: Screw_Cross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2071,6 +2155,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &249127596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 249127597}
+  m_Layer: 13
+  m_Name: AttachTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &249127597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249127596}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.9149942, y: -0.009993672, z: -4.730034}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 239550014}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &268160104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,7 +2277,7 @@ GameObject:
   - component: {fileID: 273333603}
   - component: {fileID: 273333602}
   m_Layer: 10
-  m_Name: Screw_Cross (3)
+  m_Name: Screw_Cross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3704,6 +3819,7 @@ GameObject:
   - component: {fileID: 355237019}
   - component: {fileID: 355237021}
   - component: {fileID: 355237020}
+  - component: {fileID: 355237022}
   m_Layer: 0
   m_Name: Step 10 - Remove the old plate
   m_TagString: Untagged
@@ -3854,6 +3970,19 @@ MonoBehaviour:
   xrGrabInteractable: {fileID: 746728717}
   interactorValidationLayer: 9
   workflowController: {fileID: 782939336}
+--- !u!114 &355237022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355237017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff54e303edd91f49a04c2e83cf849ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xrGrabInteractable: {fileID: 746728717}
 --- !u!1 &364507770
 GameObject:
   m_ObjectHideFlags: 0
@@ -5007,6 +5136,8 @@ GameObject:
   m_Component:
   - component: {fileID: 511570664}
   - component: {fileID: 511570665}
+  - component: {fileID: 511570667}
+  - component: {fileID: 511570666}
   m_Layer: 0
   m_Name: Step 14 - Put the new Cylinder into the Engine
   m_TagString: Untagged
@@ -5126,6 +5257,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &511570666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511570663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d68a7f31b2bf57743b991c8e96e475a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xrSocketInteractor: {fileID: 1343342817}
+  interactableValidationLayer: 13
+  stepSocketMaster: {fileID: 511570667}
+--- !u!114 &511570667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511570663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7657649ce80d7b044b8df1ee8310b684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalSockets:
+  - {fileID: 1343342815}
+  workflowController: {fileID: 782939336}
 --- !u!1 &514466610
 GameObject:
   m_ObjectHideFlags: 0
@@ -5138,6 +5299,7 @@ GameObject:
   - component: {fileID: 514466612}
   - component: {fileID: 514466614}
   - component: {fileID: 514466613}
+  - component: {fileID: 514466615}
   m_Layer: 0
   m_Name: Step 8 - Put the Screwdriver into Socket
   m_TagString: Untagged
@@ -5287,6 +5449,25 @@ MonoBehaviour:
   totalSockets:
   - {fileID: 1277809397}
   workflowController: {fileID: 782939336}
+--- !u!114 &514466615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514466610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756d26ea2e2572749a3fc63545696917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToHighlight:
+  - {fileID: 1277809402}
+  - {fileID: 6215731470105408792}
+  - {fileID: 6215731447288325578}
+  - {fileID: 6215731466101369688}
+  highlightMaterial: {fileID: 2100000, guid: 91782398c3e642648bd5bb09c85ed99f, type: 2}
+  cachedMaterial: []
 --- !u!1 &544385728
 GameObject:
   m_ObjectHideFlags: 0
@@ -11144,6 +11325,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113264914}
   m_CullTransparentMesh: 1
+--- !u!1 &1142300219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1142300220}
+  m_Layer: 13
+  m_Name: AttachTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1142300220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142300219}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.05601, y: 0.06653041, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1807243207}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1175550937
 GameObject:
   m_ObjectHideFlags: 0
@@ -11488,7 +11700,7 @@ GameObject:
   - component: {fileID: 1247170114}
   - component: {fileID: 1247170113}
   m_Layer: 10
-  m_Name: Screw_Cross (4)
+  m_Name: Screw_Cross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13182,6 +13394,7 @@ GameObject:
   - component: {fileID: 1315705494}
   - component: {fileID: 1315705496}
   - component: {fileID: 1315705495}
+  - component: {fileID: 1315705497}
   m_Layer: 13
   m_Name: Hole
   m_TagString: Untagged
@@ -13200,7 +13413,8 @@ Transform:
   m_LocalPosition: {x: -0.1747, y: 0.11, z: 0}
   m_LocalScale: {x: 0.040000003, y: 1, z: 0.04}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 48356465}
   m_Father: {fileID: 1740864250}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17}
@@ -13254,6 +13468,57 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315705493}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1315705497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315705493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1589239019}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1024
+  m_AttachTransform: {fileID: 48356465}
+  m_KeepSelectedTargetValid: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 0}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
 --- !u!1 &1334236857
 GameObject:
   m_ObjectHideFlags: 0
@@ -13667,7 +13932,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 2048
   m_AttachTransform: {fileID: 396535044}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -14554,6 +14819,7 @@ GameObject:
   - component: {fileID: 1397435000}
   - component: {fileID: 1397434999}
   - component: {fileID: 1397434998}
+  - component: {fileID: 1397435003}
   m_Layer: 0
   m_Name: Step 9 - Put Screws into Socket
   m_TagString: Untagged
@@ -14687,7 +14953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xrSocketInteractor: {fileID: 671533433}
   interactableValidationLayer: 10
-  stepSocketMaster: {fileID: 0}
+  stepSocketMaster: {fileID: 1397435002}
 --- !u!114 &1397434999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14702,7 +14968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xrSocketInteractor: {fileID: 1757177595}
   interactableValidationLayer: 10
-  stepSocketMaster: {fileID: 0}
+  stepSocketMaster: {fileID: 1397435002}
 --- !u!114 &1397435000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14717,7 +14983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xrSocketInteractor: {fileID: 1334646341}
   interactableValidationLayer: 10
-  stepSocketMaster: {fileID: 0}
+  stepSocketMaster: {fileID: 1397435002}
 --- !u!114 &1397435001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14732,7 +14998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xrSocketInteractor: {fileID: 88293501}
   interactableValidationLayer: 10
-  stepSocketMaster: {fileID: 0}
+  stepSocketMaster: {fileID: 1397435002}
 --- !u!114 &1397435002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14751,6 +15017,29 @@ MonoBehaviour:
   - {fileID: 1757177592}
   - {fileID: 671533430}
   workflowController: {fileID: 782939336}
+--- !u!114 &1397435003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397434995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756d26ea2e2572749a3fc63545696917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToHighlight:
+  - {fileID: 88293503}
+  - {fileID: 1334646343}
+  - {fileID: 1757177597}
+  - {fileID: 671533435}
+  - {fileID: 1443529446}
+  - {fileID: 245944001}
+  - {fileID: 273333599}
+  - {fileID: 1247170110}
+  highlightMaterial: {fileID: 2100000, guid: 91782398c3e642648bd5bb09c85ed99f, type: 2}
+  cachedMaterial: []
 --- !u!1 &1413753640
 GameObject:
   m_ObjectHideFlags: 0
@@ -14889,7 +15178,7 @@ GameObject:
   - component: {fileID: 1443529450}
   - component: {fileID: 1443529449}
   m_Layer: 10
-  m_Name: Screw_Cross (2)
+  m_Name: Screw_Cross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16119,6 +16408,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1590188675}
   - component: {fileID: 1590188676}
+  - component: {fileID: 1590188681}
+  - component: {fileID: 1590188680}
+  - component: {fileID: 1590188679}
+  - component: {fileID: 1590188678}
+  - component: {fileID: 1590188677}
+  - component: {fileID: 1590188682}
   m_Layer: 0
   m_Name: Step 15 - Put all Screws into the Cylinder holes
   m_TagString: Untagged
@@ -16238,6 +16533,103 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1590188677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590188674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d68a7f31b2bf57743b991c8e96e475a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xrSocketInteractor: {fileID: 1807243210}
+  interactableValidationLayer: 10
+  stepSocketMaster: {fileID: 1590188681}
+--- !u!114 &1590188678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590188674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d68a7f31b2bf57743b991c8e96e475a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xrSocketInteractor: {fileID: 239550017}
+  interactableValidationLayer: 10
+  stepSocketMaster: {fileID: 1590188681}
+--- !u!114 &1590188679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590188674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d68a7f31b2bf57743b991c8e96e475a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xrSocketInteractor: {fileID: 2052380565}
+  interactableValidationLayer: 10
+  stepSocketMaster: {fileID: 1590188681}
+--- !u!114 &1590188680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590188674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d68a7f31b2bf57743b991c8e96e475a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xrSocketInteractor: {fileID: 1315705497}
+  interactableValidationLayer: 10
+  stepSocketMaster: {fileID: 1590188681}
+--- !u!114 &1590188681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590188674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7657649ce80d7b044b8df1ee8310b684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalSockets:
+  - {fileID: 1315705493}
+  - {fileID: 2052380561}
+  - {fileID: 239550013}
+  - {fileID: 1807243206}
+  workflowController: {fileID: 0}
+--- !u!114 &1590188682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590188674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756d26ea2e2572749a3fc63545696917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToHighlight:
+  - {fileID: 1315705495}
+  - {fileID: 2052380563}
+  - {fileID: 239550015}
+  - {fileID: 1807243208}
+  highlightMaterial: {fileID: 2100000, guid: 91782398c3e642648bd5bb09c85ed99f, type: 2}
+  cachedMaterial: []
 --- !u!1 &1603029627
 GameObject:
   m_ObjectHideFlags: 0
@@ -17906,7 +18298,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740864249}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
@@ -17917,7 +18309,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 128
+    m_Bits: 2048
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -19531,6 +19923,7 @@ GameObject:
   - component: {fileID: 1807243207}
   - component: {fileID: 1807243209}
   - component: {fileID: 1807243208}
+  - component: {fileID: 1807243210}
   m_Layer: 13
   m_Name: Hole
   m_TagString: Untagged
@@ -19549,7 +19942,8 @@ Transform:
   m_LocalPosition: {x: 0.18754064, y: 0.04347592, z: 0}
   m_LocalScale: {x: 0.040000003, y: 1, z: 0.04}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1142300220}
   m_Father: {fileID: 1740864250}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17}
@@ -19603,6 +19997,57 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807243206}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1807243210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807243206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1589239019}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1024
+  m_AttachTransform: {fileID: 1142300220}
+  m_KeepSelectedTargetValid: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 0}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
 --- !u!1 &1830699865
 GameObject:
   m_ObjectHideFlags: 0
@@ -20102,6 +20547,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToHighlight:
   - {fileID: 1277809402}
+  - {fileID: 6215731470105408792}
+  - {fileID: 6215731447288325578}
+  - {fileID: 6215731466101369688}
   highlightMaterial: {fileID: 2100000, guid: 91782398c3e642648bd5bb09c85ed99f, type: 2}
   cachedMaterial: []
 --- !u!114 &1873875150
@@ -21083,6 +21531,7 @@ GameObject:
   - component: {fileID: 2052380562}
   - component: {fileID: 2052380564}
   - component: {fileID: 2052380563}
+  - component: {fileID: 2052380565}
   m_Layer: 13
   m_Name: Hole
   m_TagString: Untagged
@@ -21101,7 +21550,8 @@ Transform:
   m_LocalPosition: {x: 0.0219, y: 0.11, z: -0.19680023}
   m_LocalScale: {x: 0.040000003, y: 1, z: 0.04}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2078641028}
   m_Father: {fileID: 1740864250}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17}
@@ -21155,6 +21605,57 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052380561}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2052380565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052380561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1589239019}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1024
+  m_AttachTransform: {fileID: 2078641028}
+  m_KeepSelectedTargetValid: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 0}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
 --- !u!1 &2059486168
 GameObject:
   m_ObjectHideFlags: 0
@@ -21418,6 +21919,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2076394974}
   m_CullTransparentMesh: 1
+--- !u!1 &2078641027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2078641028}
+  m_Layer: 13
+  m_Name: AttachTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2078641028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078641027}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.9149942, y: 0, z: 4.920006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2052380562}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2113654418
 GameObject:
   m_ObjectHideFlags: 0
