@@ -8,7 +8,7 @@ namespace Instructions.Steps
         [Header("Derived")]
         [SerializeField] private XRSocketInteractor xrSocketInteractor;
         [SerializeField] private int interactableValidationLayer;
-        [SerializeField] private WorkflowController workflowController;
+        [SerializeField] private StepSocketMaster stepSocketMaster;
 
         private void Awake()
         {
@@ -19,8 +19,7 @@ namespace Instructions.Steps
         {
             if (eventArgs.interactable.gameObject.layer != interactableValidationLayer) return;
             
-            workflowController.NextStep();
-            print("Socket");
+            stepSocketMaster.Complete();
         }
     }
 }

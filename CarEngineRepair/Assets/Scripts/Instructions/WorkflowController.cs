@@ -19,7 +19,6 @@ namespace Instructions
             steps[currentStep].SetActive(false);
             currentStep++;
             steps[currentStep].SetActive(true);
-            Debug.Log("Next Step Controller");
         }
 
         public void RestartInstructions()

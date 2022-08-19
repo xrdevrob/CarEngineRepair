@@ -10,8 +10,6 @@ namespace Instructions.Steps
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag(triggerTag)) workflowController.NextStep();
-
-            Debug.Log("Trigger");
         }
     }
 }

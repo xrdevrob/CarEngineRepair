@@ -17,7 +17,6 @@ namespace Instructions.Steps
         private void Complete()
         {
             workflowController.NextStep();
-            Debug.Log("Button");
         }
     }
 }
