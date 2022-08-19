@@ -502,7 +502,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 803ccad557612aa4bba1c3d7a2acb518, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -739,7 +739,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 300947afc0c626c418f27451b648696a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -834,7 +834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 48356465}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: AttachTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -848,14 +848,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48356464}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.11, y: -0.18, z: -0.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1315705494}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &64509784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,6 +1421,8 @@ GameObject:
   m_Component:
   - component: {fileID: 217496381}
   - component: {fileID: 217496382}
+  - component: {fileID: 217496384}
+  - component: {fileID: 217496383}
   m_Layer: 0
   m_Name: Step 17 - Screw the screws tight
   m_TagString: Untagged
@@ -1454,7 +1456,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cea6c361b73c8884ca5f4d7db4249870, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1540,6 +1542,43 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &217496383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217496380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756d26ea2e2572749a3fc63545696917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToHighlight:
+  - {fileID: 1443529446}
+  - {fileID: 245944001}
+  - {fileID: 273333599}
+  - {fileID: 1247170110}
+  highlightMaterial: {fileID: 2100000, guid: 91782398c3e642648bd5bb09c85ed99f, type: 2}
+  cachedMaterial: []
+--- !u!114 &217496384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217496380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93671295acd838c45b420fdb8159a968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalScrews:
+  - {fileID: 1443529443}
+  - {fileID: 245943998}
+  - {fileID: 273333596}
+  - {fileID: 1247170107}
+  workflowController: {fileID: 782939336}
 --- !u!1001 &223015283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1662,7 +1701,8 @@ GameObject:
   - component: {fileID: 239550016}
   - component: {fileID: 239550015}
   - component: {fileID: 239550017}
-  m_Layer: 13
+  - component: {fileID: 239550018}
+  m_Layer: 0
   m_Name: Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1786,6 +1826,20 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!136 &239550018
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239550013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000030577183, y: 0.000015258789, z: -0.00012215972}
 --- !u!1 &243363954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1939,9 +1993,11 @@ GameObject:
   - component: {fileID: 245944003}
   - component: {fileID: 245944005}
   - component: {fileID: 245944004}
+  - component: {fileID: 245944006}
+  - component: {fileID: 245944007}
   m_Layer: 10
   m_Name: Screw_Cross
-  m_TagString: Untagged
+  m_TagString: Screws
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2150,11 +2206,47 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &245944006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245943998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f871210d09b7e40ace97f15167f506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepScrewMaster: {fileID: 1262416240}
+  compareTag: Screwdriver
+  xrGrabInteractable: {fileID: 245944004}
+  meshRenderer: {fileID: 245944001}
+  cashedMaterial: {fileID: 2100000, guid: 19315f2d53d67fd42aafad15bc105969, type: 2}
+  delay: 2
+--- !u!114 &245944007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245943998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f871210d09b7e40ace97f15167f506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepScrewMaster: {fileID: 217496384}
+  compareTag: Screwdriver
+  xrGrabInteractable: {fileID: 245944004}
+  meshRenderer: {fileID: 245944001}
+  cashedMaterial: {fileID: 2100000, guid: 19315f2d53d67fd42aafad15bc105969, type: 2}
+  delay: 2
 --- !u!1 &249127596
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,7 +2256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 249127597}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: AttachTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2178,14 +2270,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249127596}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.9149942, y: -0.009993672, z: -4.730034}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.03, y: 0.41, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 239550014}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &268160104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2276,9 +2368,11 @@ GameObject:
   - component: {fileID: 273333601}
   - component: {fileID: 273333603}
   - component: {fileID: 273333602}
+  - component: {fileID: 273333604}
+  - component: {fileID: 273333605}
   m_Layer: 10
   m_Name: Screw_Cross
-  m_TagString: Untagged
+  m_TagString: Screws
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2492,6 +2586,42 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &273333604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273333596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f871210d09b7e40ace97f15167f506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepScrewMaster: {fileID: 1262416240}
+  compareTag: Screwdriver
+  xrGrabInteractable: {fileID: 273333602}
+  meshRenderer: {fileID: 273333599}
+  cashedMaterial: {fileID: 2100000, guid: 19315f2d53d67fd42aafad15bc105969, type: 2}
+  delay: 2
+--- !u!114 &273333605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273333596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f871210d09b7e40ace97f15167f506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepScrewMaster: {fileID: 217496384}
+  compareTag: Screwdriver
+  xrGrabInteractable: {fileID: 273333602}
+  meshRenderer: {fileID: 273333599}
+  cashedMaterial: {fileID: 2100000, guid: 19315f2d53d67fd42aafad15bc105969, type: 2}
+  delay: 2
 --- !u!1 &277649982
 GameObject:
   m_ObjectHideFlags: 0
@@ -4742,6 +4872,7 @@ Transform:
   - {fileID: 1740864250}
   - {fileID: 1000366669}
   - {fileID: 1343342816}
+  - {fileID: 1887387788}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5138,6 +5269,7 @@ GameObject:
   - component: {fileID: 511570665}
   - component: {fileID: 511570667}
   - component: {fileID: 511570666}
+  - component: {fileID: 511570668}
   m_Layer: 0
   m_Name: Step 14 - Put the new Cylinder into the Engine
   m_TagString: Untagged
@@ -5171,7 +5303,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c451a6a18ae676e4cac9aa19648e06ca, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5269,7 +5401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d68a7f31b2bf57743b991c8e96e475a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xrSocketInteractor: {fileID: 1343342817}
+  xrSocketInteractor: {fileID: 1887387789}
   interactableValidationLayer: 13
   stepSocketMaster: {fileID: 511570667}
 --- !u!114 &511570667
@@ -5287,6 +5419,23 @@ MonoBehaviour:
   totalSockets:
   - {fileID: 1343342815}
   workflowController: {fileID: 782939336}
+--- !u!114 &511570668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511570663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756d26ea2e2572749a3fc63545696917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToHighlight:
+  - {fileID: 1740864254}
+  - {fileID: 1343342818}
+  highlightMaterial: {fileID: 2100000, guid: 91782398c3e642648bd5bb09c85ed99f, type: 2}
+  cachedMaterial: []
 --- !u!1 &514466610
 GameObject:
   m_ObjectHideFlags: 0
@@ -5795,6 +5944,8 @@ GameObject:
   m_Component:
   - component: {fileID: 572582030}
   - component: {fileID: 572582031}
+  - component: {fileID: 572582033}
+  - component: {fileID: 572582032}
   m_Layer: 0
   m_Name: Step 16 - Take your Screwdriver
   m_TagString: Untagged
@@ -5828,7 +5979,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b2c2aa7c269c27d4dad81ae004d8630d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5914,6 +6065,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &572582032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572582029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756d26ea2e2572749a3fc63545696917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToHighlight:
+  - {fileID: 6215731470105408792}
+  - {fileID: 6215731447288325578}
+  - {fileID: 6215731466101369688}
+  highlightMaterial: {fileID: 2100000, guid: 91782398c3e642648bd5bb09c85ed99f, type: 2}
+  cachedMaterial: []
+--- !u!114 &572582033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572582029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5bbfb2c4457e1e4bb18122519d0fb3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xrGrabInteractable: {fileID: 6202301892237063753}
+  interactorValidationLayer: 9
+  workflowController: {fileID: 782939336}
 --- !u!1 &584203116
 GameObject:
   m_ObjectHideFlags: 0
@@ -6461,7 +6645,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4d742ad604886794488a3bff8369efac, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -10071,9 +10255,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045239711}
-  m_LocalRotation: {x: 4.1027335e-14, y: 1.699408e-14, z: 0.37541088, w: 0.92685854}
-  m_LocalPosition: {x: -0.826, y: -0.331, z: 0.214}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 4.1160892e-14, y: -0, z: 0.37541088, w: 0.92685854}
+  m_LocalPosition: {x: -0.82600087, y: -0.33099997, z: 0.21399939}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 765516315}
@@ -11334,7 +11518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1142300220}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: AttachTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11348,14 +11532,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142300219}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.05601, y: 0.06653041, z: 0}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.06, y: 0.15, z: -0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1807243207}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1175550937
 GameObject:
   m_ObjectHideFlags: 0
@@ -11699,9 +11883,11 @@ GameObject:
   - component: {fileID: 1247170112}
   - component: {fileID: 1247170114}
   - component: {fileID: 1247170113}
+  - component: {fileID: 1247170115}
+  - component: {fileID: 1247170116}
   m_Layer: 10
   m_Name: Screw_Cross
-  m_TagString: Untagged
+  m_TagString: Screws
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11915,6 +12101,42 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1247170115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247170107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f871210d09b7e40ace97f15167f506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepScrewMaster: {fileID: 1262416240}
+  compareTag: Screwdriver
+  xrGrabInteractable: {fileID: 1247170113}
+  meshRenderer: {fileID: 1247170110}
+  cashedMaterial: {fileID: 2100000, guid: 19315f2d53d67fd42aafad15bc105969, type: 2}
+  delay: 2
+--- !u!114 &1247170116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247170107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f871210d09b7e40ace97f15167f506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepScrewMaster: {fileID: 217496384}
+  compareTag: Screwdriver
+  xrGrabInteractable: {fileID: 1247170113}
+  meshRenderer: {fileID: 1247170110}
+  cashedMaterial: {fileID: 2100000, guid: 19315f2d53d67fd42aafad15bc105969, type: 2}
+  delay: 2
 --- !u!1 &1259978357
 GameObject:
   m_ObjectHideFlags: 0
@@ -11956,6 +12178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1262416237}
   - component: {fileID: 1262416238}
+  - component: {fileID: 1262416240}
   - component: {fileID: 1262416239}
   m_Layer: 0
   m_Name: Step 7 - Unscrew Screws
@@ -12095,6 +12318,24 @@ MonoBehaviour:
   - {fileID: 1247170110}
   highlightMaterial: {fileID: 2100000, guid: 91782398c3e642648bd5bb09c85ed99f, type: 2}
   cachedMaterial: []
+--- !u!114 &1262416240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262416236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93671295acd838c45b420fdb8159a968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalScrews:
+  - {fileID: 1443529443}
+  - {fileID: 245943998}
+  - {fileID: 273333596}
+  - {fileID: 1247170107}
+  workflowController: {fileID: 782939336}
 --- !u!1 &1274332515
 GameObject:
   m_ObjectHideFlags: 0
@@ -13394,8 +13635,9 @@ GameObject:
   - component: {fileID: 1315705494}
   - component: {fileID: 1315705496}
   - component: {fileID: 1315705495}
+  - component: {fileID: 1315705498}
   - component: {fileID: 1315705497}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13519,6 +13761,20 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!136 &1315705498
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315705493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000030577183, y: 0.000015258789, z: -0.00012215972}
 --- !u!1 &1334236857
 GameObject:
   m_ObjectHideFlags: 0
@@ -13891,14 +14147,17 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1343342816}
+  - component: {fileID: 1343342820}
   - component: {fileID: 1343342817}
+  - component: {fileID: 1343342819}
+  - component: {fileID: 1343342818}
   m_Layer: 0
   m_Name: PlateSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1343342816
 Transform:
   m_ObjectHideFlags: 0
@@ -13907,8 +14166,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343342815}
   m_LocalRotation: {x: 0.14780943, y: 0.9890159, z: -0, w: 0}
-  m_LocalPosition: {x: 4.068447, y: 0.5942449, z: 17.816654}
-  m_LocalScale: {x: 0.28800005, y: 0.008235601, z: 0.2880001}
+  m_LocalPosition: {x: 4.068447, y: 0.6003, z: 17.816654}
+  m_LocalScale: {x: 0.295, y: 0.008235601, z: 0.3061729}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 396535044}
@@ -13966,6 +14225,69 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!23 &1343342818
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343342815}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: de2daff0b83b2da4a8c2d1702e8bad88, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1343342819
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343342815}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1343342820
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343342815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 16.679691, z: 0.9999999}
+  m_Center: {x: -5.488352e-10, y: -0.9082989, z: 0.0000018980951}
 --- !u!1 &1345315077
 GameObject:
   m_ObjectHideFlags: 0
@@ -14208,7 +14530,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 02bbe0ec80b610e4e9ac870cd5d039b7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -14853,7 +15175,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f2f1a911e08ce4b4fb32a8d32ef20927, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -15034,10 +15356,6 @@ MonoBehaviour:
   - {fileID: 1334646343}
   - {fileID: 1757177597}
   - {fileID: 671533435}
-  - {fileID: 1443529446}
-  - {fileID: 245944001}
-  - {fileID: 273333599}
-  - {fileID: 1247170110}
   highlightMaterial: {fileID: 2100000, guid: 91782398c3e642648bd5bb09c85ed99f, type: 2}
   cachedMaterial: []
 --- !u!1 &1413753640
@@ -15177,9 +15495,11 @@ GameObject:
   - component: {fileID: 1443529448}
   - component: {fileID: 1443529450}
   - component: {fileID: 1443529449}
+  - component: {fileID: 1443529451}
+  - component: {fileID: 1443529452}
   m_Layer: 10
   m_Name: Screw_Cross
-  m_TagString: Untagged
+  m_TagString: Screws
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15393,6 +15713,42 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1443529451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443529443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f871210d09b7e40ace97f15167f506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepScrewMaster: {fileID: 1262416240}
+  compareTag: Screwdriver
+  xrGrabInteractable: {fileID: 1443529449}
+  meshRenderer: {fileID: 1443529446}
+  cashedMaterial: {fileID: 2100000, guid: 19315f2d53d67fd42aafad15bc105969, type: 2}
+  delay: 2
+--- !u!114 &1443529452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443529443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f871210d09b7e40ace97f15167f506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepScrewMaster: {fileID: 217496384}
+  compareTag: Screwdriver
+  xrGrabInteractable: {fileID: 1443529449}
+  meshRenderer: {fileID: 1443529446}
+  cashedMaterial: {fileID: 2100000, guid: 19315f2d53d67fd42aafad15bc105969, type: 2}
+  delay: 2
 --- !u!1 &1510712232
 GameObject:
   m_ObjectHideFlags: 0
@@ -16408,6 +16764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1590188675}
   - component: {fileID: 1590188676}
+  - component: {fileID: 1590188683}
   - component: {fileID: 1590188681}
   - component: {fileID: 1590188680}
   - component: {fileID: 1590188679}
@@ -16447,7 +16804,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3af480702e1fbea4fb4f8a618bec1ac8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -16610,7 +16967,7 @@ MonoBehaviour:
   - {fileID: 2052380561}
   - {fileID: 239550013}
   - {fileID: 1807243206}
-  workflowController: {fileID: 0}
+  workflowController: {fileID: 782939336}
 --- !u!114 &1590188682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16628,8 +16985,25 @@ MonoBehaviour:
   - {fileID: 2052380563}
   - {fileID: 239550015}
   - {fileID: 1807243208}
+  - {fileID: 1443529446}
+  - {fileID: 245944001}
+  - {fileID: 273333599}
+  - {fileID: 1247170110}
   highlightMaterial: {fileID: 2100000, guid: 91782398c3e642648bd5bb09c85ed99f, type: 2}
   cachedMaterial: []
+--- !u!114 &1590188683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590188674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65a6719cdd212041938257b6ebb4402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xrGrabInteractable: {fileID: 1740864252}
 --- !u!1 &1603029627
 GameObject:
   m_ObjectHideFlags: 0
@@ -18267,7 +18641,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740864249}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.3425922, y: 1.0830221, z: 23.496498}
+  m_LocalPosition: {x: 4.3425922, y: 1.094, z: 23.496498}
   m_LocalScale: {x: 0.25, y: 0.0050000004, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19170,9 +19544,10 @@ GameObject:
   - component: {fileID: 1760788353}
   - component: {fileID: 1760788352}
   - component: {fileID: 1760788351}
+  - component: {fileID: 1760788354}
   m_Layer: 11
-  m_Name: Capsule
-  m_TagString: Untagged
+  m_Name: Tip
+  m_TagString: Screwdriver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19200,7 +19575,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760788349}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -19256,6 +19631,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760788349}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1760788354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760788349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68c6268562dcde41b82d3465ac62f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screwdriverAnimator: {fileID: 6264611645148123809}
+  audioSource: {fileID: 0}
 --- !u!1 &1792445231
 GameObject:
   m_ObjectHideFlags: 0
@@ -19272,7 +19661,7 @@ GameObject:
   - component: {fileID: 1792445236}
   m_Layer: 10
   m_Name: Screw_Single (1)
-  m_TagString: Untagged
+  m_TagString: Screws
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19924,7 +20313,8 @@ GameObject:
   - component: {fileID: 1807243209}
   - component: {fileID: 1807243208}
   - component: {fileID: 1807243210}
-  m_Layer: 13
+  - component: {fileID: 1807243211}
+  m_Layer: 0
   m_Name: Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20048,6 +20438,20 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!136 &1807243211
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807243206}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000030577183, y: 0.000015258789, z: -0.00012215972}
 --- !u!1 &1830699865
 GameObject:
   m_ObjectHideFlags: 0
@@ -20546,7 +20950,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsToHighlight:
-  - {fileID: 1277809402}
   - {fileID: 6215731470105408792}
   - {fileID: 6215731447288325578}
   - {fileID: 6215731466101369688}
@@ -20567,6 +20970,103 @@ MonoBehaviour:
   xrGrabInteractable: {fileID: 6202301892237063753}
   interactorValidationLayer: 9
   workflowController: {fileID: 782939336}
+--- !u!1 &1887387787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1887387788}
+  - component: {fileID: 1887387790}
+  - component: {fileID: 1887387789}
+  m_Layer: 7
+  m_Name: PlateSocket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1887387788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887387787}
+  m_LocalRotation: {x: -0, y: -0, z: -0.14780933, w: 0.9890159}
+  m_LocalPosition: {x: 4.077092, y: 0.60702205, z: 17.811398}
+  m_LocalScale: {x: 0.25, y: 0.005000001, z: 0.25}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 446232613}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17}
+--- !u!114 &1887387789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887387787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1589239019}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 2048
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 0}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+--- !u!65 &1887387790
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887387787}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.430671, z: 1}
+  m_Center: {x: -0.000000002060446, y: -3.177524, z: 0}
 --- !u!1 &1916869775
 GameObject:
   m_ObjectHideFlags: 0
@@ -21531,8 +22031,9 @@ GameObject:
   - component: {fileID: 2052380562}
   - component: {fileID: 2052380564}
   - component: {fileID: 2052380563}
+  - component: {fileID: 2052380566}
   - component: {fileID: 2052380565}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21623,7 +22124,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 1024
-  m_AttachTransform: {fileID: 2078641028}
+  m_AttachTransform: {fileID: 48356465}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_HoverEntered:
@@ -21656,6 +22157,20 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!136 &2052380566
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052380561}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000030577183, y: 0.000015258789, z: -0.00012215972}
 --- !u!1 &2059486168
 GameObject:
   m_ObjectHideFlags: 0
@@ -21928,7 +22443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2078641028}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: AttachTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21942,14 +22457,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078641027}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -4.9149942, y: 0, z: 4.920006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2052380562}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &2113654418
 GameObject:
   m_ObjectHideFlags: 0
@@ -26130,7 +26645,7 @@ GameObject:
   - component: {fileID: 4395363460421984186}
   m_Layer: 10
   m_Name: Screw_Cross
-  m_TagString: Untagged
+  m_TagString: Screws
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26227,7 +26742,7 @@ GameObject:
   - component: {fileID: 4395363461212826112}
   m_Layer: 10
   m_Name: Screw_Single
-  m_TagString: Untagged
+  m_TagString: Screws
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26286,7 +26801,7 @@ GameObject:
   - component: {fileID: 4395363428354915055}
   m_Layer: 10
   m_Name: Screw_Cross_Round
-  m_TagString: Untagged
+  m_TagString: Screws
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29670,7 +30185,7 @@ GameObject:
   - component: {fileID: 4372645196981886112}
   - component: {fileID: 4372645196982832976}
   - component: {fileID: 4372645196978936334}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: BigShelves04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37308,10 +37823,12 @@ GameObject:
   - component: {fileID: 6205174449083620220}
   - component: {fileID: 6202301892237063752}
   - component: {fileID: 6202301892237063755}
+  - component: {fileID: 6205174449083620221}
   - component: {fileID: 6202301892237063753}
+  - component: {fileID: 6205174449083620222}
   m_Layer: 11
-  m_Name: Drill
-  m_TagString: Untagged
+  m_Name: Screwdriver
+  m_TagString: Screwdriver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37328,6 +37845,7 @@ GameObject:
   - component: {fileID: 6225731567284134854}
   - component: {fileID: 6215731447288325578}
   - component: {fileID: 6264611645148123808}
+  - component: {fileID: 6264611645148123809}
   m_Layer: 11
   m_Name: Top_Front
   m_TagString: Untagged
@@ -44632,10 +45150,34 @@ MonoBehaviour:
       m_Calls: []
   m_Activated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6205174449083620221}
+        m_TargetAssemblyTypeName: Instructions.Steps.StepUnscrewScrew, Assembly-CSharp
+        m_MethodName: OnActivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Deactivated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6205174449083620221}
+        m_TargetAssemblyTypeName: Instructions.Steps.StepUnscrewScrew, Assembly-CSharp
+        m_MethodName: OnDeactivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -56186,6 +56728,116 @@ Transform:
   m_Father: {fileID: 446232613}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &6205174449083620221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6201611942169872004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68c6268562dcde41b82d3465ac62f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screwdriverAnimator: {fileID: 6264611645148123809}
+  audioSource: {fileID: 6205174449083620222}
+--- !u!82 &6205174449083620222
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6201611942169872004}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 05fef32996fcf604b8c316be045a6897, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &6209653318660207409
 Transform:
   m_ObjectHideFlags: 0
@@ -56387,6 +57039,26 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 004a97f809c2c7c40b973eabe880a410, type: 3}
+--- !u!95 &6264611645148123809
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6201611943283826866}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c79afbf2add0fd48bc3ee5ffb3e119e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!64 &6264611646030699882
 MeshCollider:
   m_ObjectHideFlags: 0

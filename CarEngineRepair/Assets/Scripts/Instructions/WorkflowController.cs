@@ -9,7 +9,9 @@ namespace Instructions
         [SerializeField] private int currentStep = 0;
         [SerializeField] private int maxSteps;
 
-        private void Awake()
+        public static Action<int> OnStepChange;
+
+            private void Awake()
         {
             steps[0].SetActive(true);
         }
@@ -25,6 +27,7 @@ namespace Instructions
             steps[currentStep].SetActive(false);
             currentStep++;
             steps[currentStep].SetActive(true);
+            OnStepChange?.Invoke(currentStep);
         }
 
         public void RestartInstructions()

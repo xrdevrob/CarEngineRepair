@@ -20,7 +20,6 @@ namespace Instructions.Steps
             if (eventArgs.interactor.gameObject.layer != interactorValidationLayer) return;
 
             workflowController.NextStep();
-            Debug.Log("Next Step Triggered on Grab");
         }
 
         private void OnDisable()
