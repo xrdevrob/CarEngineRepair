@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Instructions.Steps
@@ -7,13 +8,13 @@ namespace Instructions.Steps
     {
         [SerializeField] private MeshRenderer[] objectsToHighlight;
         [SerializeField] private Material highlightMaterial;
-        [SerializeField] private Material[] previousMaterial;
+        [SerializeField] private List<Material> cachedMaterial = new();
 
         private void OnEnable()
         {
-            for (int i = 0; i < objectsToHighlight.Length; i++)
+            foreach (var meshRenderer in objectsToHighlight)
             {
-                previousMaterial[i] = objectsToHighlight[i].material;
+                cachedMaterial.Add(meshRenderer.materials[0]);
             }
             
             for (int i = 0; i < objectsToHighlight.Length; i++)
@@ -26,7 +27,8 @@ namespace Instructions.Steps
         {
             for (int i = 0; i < objectsToHighlight.Length; i++)
             {
-                objectsToHighlight[i].material = previousMaterial[i];
+                objectsToHighlight[i].material = cachedMaterial[i];
+                
             }
         }
     }
