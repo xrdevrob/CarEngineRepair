@@ -1,18 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using Button = UnityEngine.UI.Button;
 
-public class StepButtonClick : MonoBehaviour
+namespace Instructions.Steps
 {
-    // Start is called before the first frame update
-    void Start()
+    public class StepButtonClick : MonoBehaviour
     {
-        
-    }
+        [SerializeField] private Button button;
+        [SerializeField] private WorkflowController workflowController;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void Awake()
+        {
+            button.onClick.AddListener(Complete);
+        }
+
+        private void Complete()
+        {
+            workflowController.NextStep();
+            Debug.Log("Button");
+        }
     }
 }
