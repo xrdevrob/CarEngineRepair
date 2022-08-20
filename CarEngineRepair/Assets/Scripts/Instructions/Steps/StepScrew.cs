@@ -14,32 +14,41 @@ namespace Instructions.Steps
         [SerializeField] private Material cashedMaterial;
         [SerializeField] private float delay = 2f;
 
-        private bool _objectTriggered;
         private bool _coroutineRunning;
+        private Coroutine _routine;
 
         private void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag(compareTag)) return;
-            _objectTriggered = true;
-            StartCoroutine(CompleteStep());
+            
+            _routine = StartCoroutine(CompleteStep());
         }
 
         private void OnTriggerExit(Collider other)
         {
             if (!other.CompareTag(compareTag)) return;
-            if (_objectTriggered && _coroutineRunning) StopCoroutine(CompleteStep());
 
-            _objectTriggered = false;
+            Debug.Log($"TriggerExit: {other.gameObject.name}");
+            if (_coroutineRunning)
+            {
+                StopCoroutine(_routine);
+                _coroutineRunning = false;
+                Debug.Log("Coroutine Stopped");
+            }
         }
 
         public IEnumerator CompleteStep()
         {
+            Debug.Log("Coroutine Start");
             _coroutineRunning = true;
             yield return new WaitForSeconds(delay);
+            Debug.Log("After Delay");
             xrGrabInteractable.enabled = true;
             meshRenderer.material = cashedMaterial;
             stepScrewMaster.Complete();
             _coroutineRunning = false;
+            Debug.Log("Coroutine End");
+            _routine = null;
         }
     }
 }

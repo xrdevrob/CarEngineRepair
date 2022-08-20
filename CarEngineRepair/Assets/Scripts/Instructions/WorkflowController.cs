@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Instructions
 {
@@ -32,8 +33,7 @@ namespace Instructions
 
         public void RestartInstructions()
         {
-            steps[maxSteps-1].SetActive(false);
-            steps[0].SetActive(true);
+            SceneManager.LoadSceneAsync(0);
         }
     }
 }
